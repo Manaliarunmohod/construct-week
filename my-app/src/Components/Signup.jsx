@@ -45,12 +45,13 @@ export const SignUp=()=>{
     }
     return (
         <div>
-        <div id="pic">
-        <div id="login-form-div">
+        <div id="p">
+        <div id="login-form-di">
             
             <h1 className="mana">Welcome</h1>
     <hr className="line"></hr>
             <input type="text"
+            id="fu"
             className="f1"
                 placeholder="Enter name" 
                 value={ name }
@@ -107,6 +108,7 @@ export const SignUp=()=>{
         
 
         <button  id="signinbu" onClick={handleSubmit}>SignUp</button>
+        <p id="forge">fogret the password</p>
         
        
         </div>

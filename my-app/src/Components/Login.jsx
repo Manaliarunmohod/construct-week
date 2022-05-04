@@ -33,13 +33,14 @@ export const Login=()=>{
         .catch((err)=>dispatch(loginfailure(err)))
     }
     return (
-        <div id="pic">
-      <div id="login-form-div">
+        <div id="p">
+      <div id="login-form-di">
             
             <h1 className="mana">Welcome</h1>
     <hr className="line"></hr>
          <input type="text"
-           className="f1"
+           className="f"
+           id="fu"
                 placeholder="Enter username" 
                 value={username}
                 onChange={(e)=>{setUsername(e.target.value)}} 
@@ -48,7 +49,7 @@ export const Login=()=>{
            <br />
 
          <input type="text"
-           className="f1"
+           className="f"
                 placeholder="password"
                 value={password}
                 onChange={(e)=>{setPassword(e.target.value)}}  />       
@@ -56,7 +57,9 @@ export const Login=()=>{
            <br />
 
         <button  id="signinbu" onClick={handleSubmit}>Login</button>
+        <p id="forge">fogret the password</p>
         </div>
         </div>
+       
     )
 }
